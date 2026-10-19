@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago Barbershop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #f1f1f1;
+      text-align: center;
+    }
+    header {
+      padding: 70px 20px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), #2b2b2b;
+      border-bottom: 4px solid #d4a24c;
+    }
+    h1 { font-size: 2.4rem; color: #d4a24c; }
+    header p { margin-top: 10px; font-size: 1.1rem; }
+    .botao {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 30px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+    }
+    section { padding: 50px 20px; max-width: 900px; margin: auto; }
+    h2 { margin-bottom: 25px; color: #d4a24c; }
+    /* Tabela de preços */
+    .precos { list-style: none; max-width: 450px; margin: auto; }
+    .precos li {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 10px;
+      border-bottom: 1px dashed #555;
+      font-size: 1.1rem;
+    }
+    .precos span { color: #d4a24c; font-weight: bold; }
+    .precos .breve { color: #888; font-weight: normal; font-style: italic; }
+    .combo { margin-top: 20px; color: #25d366; font-weight: bold; }
+    /* Galeria com CSS Grid */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .galeria div {
+      background: #222;
+      aspect-ratio: 1 / 1;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+    }
+    /* Botão de agendamento com animação de pulso */
+    .agendar {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 16px 28px;
+      background: #25d366;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      animation: pulso 1.5s infinite;
+    }
+    @keyframes pulso {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+    .insta { color: #d4a24c; font-weight: bold; text-decoration: none; }
+    footer { padding: 25px; color: #888; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✂️ Thiago Barbershop</h1>
+    <p>Cortes masculinos, degradê e barba em Belford Roxo.</p>
+    <a class="botao" href="https://wa.me/5521977208295?text=Ol%C3%A1%2C%20quero%20agendar%20um%20corte" target="_blank">Agendar pelo WhatsApp</a>
+  </header>
+
+  <section>
+    <h2>Serviços e preços</h2>
+    <ul class="precos">
+      <li>Corte simples <span>R$ 20,00</span></li>
+      <li>Corte degradê <span>R$ 25,00</span></li>
+      <li>Barba simples <span>R$ 15,00</span></li>
+      <li>Barba modelada <span>R$ 20,00</span></li>
+      <li>Pigmentação <span>R$ 12,00</span></li>
+      <li>Perfil (pezinho) <span>R$ 7,00</span></li>
+      <li>Alisamento americano <span>R$ 12,00</span></li>
+      <li>Reflexo <span class="breve">Em breve</span></li>
+      <li>Luzes <span class="breve">Em breve</span></li>
+      <li>Nevou <span class="breve">Em breve</span></li>
+    </ul>
+    <p class="combo">🔥 Descontos em combos: consulte no WhatsApp</p>
+    <a class="agendar" href="https://wa.me/5521977208295?text=Ol%C3%A1%2C%20quero%20fazer%20meu%20agendamento" target="_blank">⏰ Poucas vagas, faça seu agendamento agora!</a>
+  </section>
+
+  <section>
+    <h2>Meus cortes</h2>
+    <!-- Depois trocamos esses quadrados pelas fotos dos seus cortes -->
+    <div class="galeria">
+      <div>Foto 1</div>
+      <div>Foto 2</div>
+      <div>Foto 3</div>
+      <div>Foto 4</div>
+    </div>
+    <p style="margin-top:20px">Veja mais no Instagram:
+      <a class="insta" href="https://www.instagram.com/thiagobarbershop22/" target="_blank">@thiagobarbershop22</a>
+    </p>
+  </section>
+
+  <footer>© 2026 Thiago Barbershop · Site feito por Thiago Rosa</footer>
+
+</body>
+</html>
